@@ -1,0 +1,152 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>XSS Scan Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    pre { white-space: pre-wrap; word-break: break-word; }
+    .meta { margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <h1>XSS Scan Report</h1>
+  <div class="meta">
+    <p>Generated: 2025-11-23T16:29:11.965248Z</p>
+    <p>Target: http://127.0.0.1:5000/search</p>
+    <p>Total reflections: 8</p>
+  </div>
+  
+  <table>
+    <thead>
+      <tr><th>Parameter</th><th>Detected Context</th><th>Payload</th><th>Status</th><th>URL</th><th>Snippet</th></tr>
+    </thead>
+    <tbody>
+    
+      <tr>
+        <td>q</td>
+        <td>text</td>
+        <td><pre>vpywne:<script>alert(1)</script>:vpywne</pre></td>
+        <td>200</td>
+        <td><a href="http://127.0.0.1:5000/search?q=vpywne%3A%3Cscript%3Ealert%281%29%3C%2Fscript%3E%3Avpywne">link</a></td>
+        <td><pre><html>
+    <head><title>Search</title></head>
+    <body>
+      <h1>Search results</h1>
+      <p>You searched for: vpywne:<script>alert(1)</script>:vpywne</p>
+    </body>
+    </html></pre></td>
+      </tr>
+    
+      <tr>
+        <td>q</td>
+        <td>text</td>
+        <td><pre>vpywne:<img src=x onerror=alert(1)>:vpywne</pre></td>
+        <td>200</td>
+        <td><a href="http://127.0.0.1:5000/search?q=vpywne%3A%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E%3Avpywne">link</a></td>
+        <td><pre><html>
+    <head><title>Search</title></head>
+    <body>
+      <h1>Search results</h1>
+      <p>You searched for: vpywne:<img src=x onerror=alert(1)>:vpywne</p>
+    </body>
+    </html></pre></td>
+      </tr>
+    
+      <tr>
+        <td>q</td>
+        <td>text</td>
+        <td><pre>vpywne:" onerror=alert(1) ":vpywne</pre></td>
+        <td>200</td>
+        <td><a href="http://127.0.0.1:5000/search?q=vpywne%3A%22+onerror%3Dalert%281%29+%22%3Avpywne">link</a></td>
+        <td><pre><html>
+    <head><title>Search</title></head>
+    <body>
+      <h1>Search results</h1>
+      <p>You searched for: vpywne:" onerror=alert(1) ":vpywne</p>
+    </body>
+    </html></pre></td>
+      </tr>
+    
+      <tr>
+        <td>q</td>
+        <td>text</td>
+        <td><pre>vpywne:" onmouseover=alert(1) ":vpywne</pre></td>
+        <td>200</td>
+        <td><a href="http://127.0.0.1:5000/search?q=vpywne%3A%22+onmouseover%3Dalert%281%29+%22%3Avpywne">link</a></td>
+        <td><pre><html>
+    <head><title>Search</title></head>
+    <body>
+      <h1>Search results</h1>
+      <p>You searched for: vpywne:" onmouseover=alert(1) ":vpywne</p>
+    </body>
+    </html></pre></td>
+      </tr>
+    
+      <tr>
+        <td>q</td>
+        <td>text</td>
+        <td><pre>vpywne:"/><img src=x onerror=alert(1)>:vpywne</pre></td>
+        <td>200</td>
+        <td><a href="http://127.0.0.1:5000/search?q=vpywne%3A%22%2F%3E%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E%3Avpywne">link</a></td>
+        <td><pre><html>
+    <head><title>Search</title></head>
+    <body>
+      <h1>Search results</h1>
+      <p>You searched for: vpywne:"/><img src=x onerror=alert(1)>:vpywne</p>
+    </body>
+    </html></pre></td>
+      </tr>
+    
+      <tr>
+        <td>q</td>
+        <td>text</td>
+        <td><pre>vpywne:onerror:vpywne</pre></td>
+        <td>200</td>
+        <td><a href="http://127.0.0.1:5000/search?q=vpywne%3Aonerror%3Avpywne">link</a></td>
+        <td><pre><html>
+    <head><title>Search</title></head>
+    <body>
+      <h1>Search results</h1>
+      <p>You searched for: vpywne:onerror:vpywne</p>
+    </body>
+    </html></pre></td>
+      </tr>
+    
+      <tr>
+        <td>q</td>
+        <td>text</td>
+        <td><pre>vpywne:onmouseover:vpywne</pre></td>
+        <td>200</td>
+        <td><a href="http://127.0.0.1:5000/search?q=vpywne%3Aonmouseover%3Avpywne">link</a></td>
+        <td><pre><html>
+    <head><title>Search</title></head>
+    <body>
+      <h1>Search results</h1>
+      <p>You searched for: vpywne:onmouseover:vpywne</p>
+    </body>
+    </html></pre></td>
+      </tr>
+    
+      <tr>
+        <td>q</td>
+        <td>text</td>
+        <td><pre>vpywne:xssattr:vpywne</pre></td>
+        <td>200</td>
+        <td><a href="http://127.0.0.1:5000/search?q=vpywne%3Axssattr%3Avpywne">link</a></td>
+        <td><pre><html>
+    <head><title>Search</title></head>
+    <body>
+      <h1>Search results</h1>
+      <p>You searched for: vpywne:xssattr:vpywne</p>
+    </body>
+    </html></pre></td>
+      </tr>
+    
+    </tbody>
+  </table>
+  
+</body>
+</html>
