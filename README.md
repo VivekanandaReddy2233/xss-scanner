@@ -5,12 +5,12 @@ This tool helps developers test web applications by injecting common XSS payload
 
 **🚀 Features**
 
-✔️ Scan any GET/POST endpoint for potential XSS vulnerabilities
+$✔️ Scan any GET/POST endpoint for potential XSS vulnerabilities
 ✔️ Test single or multiple parameters
 ✔️ Uses multiple pre-built XSS payloads
 ✔️ Generates a clean and readable HTML report
 ✔️ Easy to run & beginner friendly
-✔️ Includes a local test application (test_server.py) to simulate a vulnerable endpoint
+✔️ Includes a local test application (test_server.py) to simulate a vulnerable endpoint$
 
 **📂 Project Structure**
 
@@ -39,14 +39,14 @@ pip
 
 **Install dependencies:**
 
-````pip install -r requirements.txt```
+`pip install -r requirements.txt`
 
 
 ### If installing inside a virtual environment:
 
-python -m venv .venv
-source .venv/bin/activate   # Linux/macOS
-.venv\Scripts\activate      # Windows
+> python -m venv .venv
+> source .venv/bin/activate   # Linux/macOS
+> .venv\Scripts\activate      # Windows
 
 **🧪 Running the Test Server (Optional)**
 
