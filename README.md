@@ -13,6 +13,8 @@ This tool helps developers test web applications by injecting common XSS payload
 ✔️ Includes a local test application (test_server.py) to simulate a vulnerable endpoint
 
 **📂 Project Structure**
+
+```python
 **xss-scanner/
 │
 ├── scanner/
@@ -23,6 +25,7 @@ This tool helps developers test web applications by injecting common XSS payload
 ├── test_server.py     # Sample Flask server with a vulnerable input
 ├── requirements.txt   # Dependencies
 └── README.md          # Documentation**
+```
 
 **`🧰 Requirements`**
 
@@ -36,7 +39,7 @@ pip
 
 **Install dependencies:**
 
-``pip install -r requirements.txt`
+````pip install -r requirements.txt```
 
 
 ### If installing inside a virtual environment:
