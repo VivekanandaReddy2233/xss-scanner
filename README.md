@@ -86,7 +86,9 @@ Basic usage:
 
 **Example POST request:**
 
+$$
 [`python -m scanner.cli --url "https://example.com/login" --params "username,password" --method POST --out login_report.html`](https://)
+$$
 
 **📊 Report Output**
 
