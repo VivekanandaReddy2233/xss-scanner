@@ -6,12 +6,12 @@ This tool helps developers test web applications by injecting common XSS payload
 **🚀 Features**
 
 ```python
-![$✔️ Scan any GET/POST endpoint for potential XSS vulnerabilities
+✔️ Scan any GET/POST endpoint for potential XSS vulnerabilities
 ✔️ Test single or multiple parameters
 ✔️ Uses multiple pre-built XSS payloads
 ✔️ Generates a clean and readable HTML report
 ✔️ Easy to run & beginner friendly
-✔️ Includes a local test application (test_server.py) to simulate a vulnerable endpoint$](https://)
+✔️ Includes a local test application (test_server.py) to simulate a vulnerable endpoint
 ```
 
 **📂 Project Structure**
@@ -102,7 +102,7 @@ Highlighted vulnerabilities
 
 [Open it in your browser:](https://)
 
-[report.html](https://)
+`[report.html]`
 
 **📝** **Notes**
 
